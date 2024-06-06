@@ -15,7 +15,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #e3f2fd;
+  background: #365c77;
   flex-direction: column;
 }
 header {
@@ -25,18 +25,6 @@ header {
     left: 0;
     z-index: 10;
     padding: 0 10px;
-}
-.mobile-menu {
-  display: none;
-  cursor: pointer;
-}
-
-.mobile-menu div {
-  width: 32px;
-  height: 2px;
-  background: #fff;
-  margin: 8px;
-  transition: 0.3s;
 }
 .links {
   list-style: none;
@@ -50,15 +38,16 @@ header {
 
 .navbar {
   display: flex;
-  padding: 22px 0;
+  padding: 0;
   align-items: center;
-  margin: 0 auto;
-  justify-content: space-between;
+  margin: auto;
+  justify-content: center;
   position: relative;
+  padding-right: 120px;
+
 }
 
 .navbar .logo {
-  gap: 10px;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -71,16 +60,17 @@ header {
   color: #38a3e0;
   font-weight: 600;
   font-size: 1.7rem;
+  gap: 10px;
 }
 .navbar .links {
   display: flex;
-  gap: 35px;
+  gap: 5px;
   list-style: none;
   align-items: center;
   transition: transform 0.3s ease-in-out;
 }
 .navbar .links a {
-  color: #20b2cc;
+  color: #e2ebf1;
   font-size: 1.1rem;
   font-weight: 500;
   text-decoration: none;
@@ -232,8 +222,12 @@ header {
 }
 
 .btn img {
-  width: 70%; /* Ajuste o tamanho da imagem dentro do botão */
+  width: 70%; 
   height: auto;
+}
+
+.btn:hover{
+  transform: translateY(-10px);
 }
 main {
   display: block;
@@ -410,68 +404,41 @@ body{
   flex: 1;
   padding: 10px;
 }
-@media (max-width: 1200px){
-  .container {
-      padding: 15px;
-  }
-}
-@media (max-width: 992px){
-  .col {
-      flex: 0 0 50%;
-      max-width: 50%;
-  }
-}
-@media (max-width: 768px){
-  .col {
-      flex: 0 0 100%;
-      max-width: 100%;
-  }
-}
-@media (max-width: 576px){
-  body {
-      padding: 5px;
-  }
+@media (max-width:800px){
 
-  .container{
-      padding: 10px;
-  }
+.navbar {
+    flex-direction: column;
+}
+.links{
+  flex-direction: column;
+}
+.col {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+body {
+  padding: 5px;
+}
+
+.container{
+  padding: 10px;
+}
 }
 h1{
-  font-size: 2.5em;
-  margin-bottom: 20px;
+font-size: 2.5em;
+margin-bottom: 20px;
 }
 p{
-  font-size: 1em;
-  margin-bottom: 10px;
+font-size: 1em;
+margin-bottom: 10px;
 }
-@media (max-width: 992px){
-  h1{
-      font-size: 2em;
-  }
 
-  p{
-      font-size: 0.9em;
-  }
-}
-@media (max-width: 768px){
-  h1{
-      font-size: 1.5em;
-  }
-
-  p{
-      font-size: 0.8em;
-  }
-}
 .navbar a {
   color: #fff;
   padding: 10px;
   text-decoration: none;
   text-align: center;
 }
-@media (max-width: 768px) {
-  .navbar {
-      flex-direction: column;
-  }
-}
-
-
+.sect-explicacoes , h2  , p{
+  width: 400px;
+ }
